@@ -1,52 +1,52 @@
 [
   {
-    "title": "Clamaane",
-    "image": "/content-images/logo-01.svg",
-    "link": "https://www.blackspike.com/"
+    "title": "Restaurante Trinimex",
+    "image": "/content-images/cliente-trinimex.png",
+    "link": "https://www.facebook.com/trinimex"
   },
   {
-    "title": "Komplex",
-    "image": "/content-images/logo-02.svg",
-    "link": "https://www.blackspike.com/"
+    "title": "Ditribuidora Monteverde",
+    "image": "/content-images/cliente-monteverde.png",
+    "link": "https://www.facebook.com/DistribuidoraMonteverde"
   },
   {
-    "title": "Splashed",
-    "image": "/content-images/logo-03.svg",
-    "link": "https://www.blackspike.com/"
+    "title": "Motorepuestos El jinete",
+    "image": "/content-images/cliente-eljinete.png",
+    "link": "https://www.facebook.com/ElJineteMotoRepuestos"
   },
   {
-    "title": "HydroLab",
-    "image": "/content-images/logo-04.svg",
-    "link": "https://www.blackspike.com/"
+    "title": "Delicia Importaciones",
+    "image": "/content-images/cliente-delicia.png",
+    "link": "https://www.facebook.com/profile.php?id=100060582674469"
   },
   {
-    "title": "Aromaf",
-    "image": "/content-images/logo-05.svg",
-    "link": "https://www.blackspike.com/"
+    "title": "Colegios de arquitectos del Beni",
+    "image": "/content-images/cliente-cadbeni.png",
+    "link": "https://cadbeni.com/"
   },
   {
-    "title": "Mediora",
-    "image": "/content-images/logo-06.svg",
-    "link": "https://www.blackspike.com/"
+    "title": "Kaliman Asador",
+    "image": "/content-images/cliente-kaliman.png",
+    "link": "https://www.facebook.com/kalimanasadorbo"
   },
   {
-    "title": "wellboth",
-    "image": "/content-images/logo-07.svg",
-    "link": "https://www.blackspike.com/"
+    "title": "Hotel Tarope",
+    "image": "/content-images/cliente-hoteltarope.png",
+    "link": "https://www.hoteltarope.com.bo/"
   },
   {
-    "title": "humbbble",
-    "image": "/content-images/logo-08.svg",
-    "link": "https://www.blackspike.com/"
+    "title": "La Palabra del Beni",
+    "image": "/content-images/cliente-la-palabra-del-beni.jpg",
+    "link": "https://lapalabradelbeni.com/"
   },
   {
-    "title": "Interia",
-    "image": "/content-images/logo-09.svg",
-    "link": "https://www.blackspike.com/"
+    "title": "Coteautri",
+    "image": "/content-images/cliente-coteautri.png",
+    "link": "https://www.coteautri.bo/"
   },
   {
-    "title": "Anorch",
-    "image": "/content-images/logo-10.svg",
-    "link": "https://www.blackspike.com/"
+    "title": "Strong Gym",
+    "image": "/content-images/cliente-strong-gym.png",
+    "link": "https://www.facebook.com/profile.php?id=61575791840406"
   }
 ]

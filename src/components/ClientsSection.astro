@@ -16,11 +16,12 @@ const { title, clients } = Astro.props
      {
       clients.map( item =>
 
-        <a class="group py-10 px-5 rounded-xl flex place-content-center bg-bs-surface-2/70 hover:bg-bs-surface-2 transition-colors duration-300" href={ item.link }>
+        <a class="group py-10 px-5 rounded-xl flex place-content-center bg-bs-surface-2/70 hover:bg-bs-surface-2 transition-colors duration-300" href={ item.link } target="_blank">
 
           <img
             src={ item.image }
             alt={ item.title }
+            title={ item.title }
             class="opacity-60 max-w-32 min-h-16 group-hover:scale-[1.05] group-hover:-translate-y-1 group-hover:opacity-100 group-hover:-rotate-1 ease-bs-bounce transition-all duration-1000"
             width="140"
             height="40"

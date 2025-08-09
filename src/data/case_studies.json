@@ -1,32 +1,52 @@
 [
   {
-    "title": "Powering Growth.<br>Simplifying Success.",
-    "sector": "Web design",
-    "content": "<strong>Our custom web design solution helped Biotechlet Ltd elevate its digital presence with a clean, modern interface and intuitive user experience. </strong> <br><br>The redesigned site streamlined user journeys, improved accessibility, and strengthened brand credibility.",
-    "case_study_link": "https://www.spike.news",
-    "cta": "Visit spike.news",
-    "image": "/content-images/spike.news.avif",
+    "title": "Gerente de Restaurantes",
+    "sector": "Administración",
+    "content": "<strong>Aplicación web pensada para facilitar la administración de tu restaurante.</strong> <br><br>Puedes administrar tus ventas, inventario, compras, caja, generación de reportes y más funciones claves que te ayudarán a optimizar tu negocio eficientemente.",
+    "case_study_link": "https://restaurante.desarrollocreativo.dev/login?auth=demo",
+    "cta": "Visita Gerente de Restaurantes",
+    "image": "/content-images/proyecto-restaurante.avif",
     "image_alt": "iPad showing spike.news website",
-    "bg": "bg-gradient-to-r from-indigo-500 to-purple-600"
+    "bg": "bg-gradient-to-r from-green-400 to-green-700"
   },
   {
-    "title": "Accelerating Innovation.<br>Empowering Results.",
-    "sector": "Development",
-    "content": "Our dynamic design and build simplified productivity, delivering automated solutions, seamless collaboration, and data-driven insights",
-    "case_study_link": "https://pixelate.pictures",
-    "cta": "Visit pixelate.pictures",
-    "image": "/content-images/pixelate.pictures.avif",
-    "image_alt": "iPad showing pixelated wave painting",
+    "title": "EShop - Tienda Online",
+    "sector": "Ecommerce",
+    "content": "Sistema web integral para la administración de ventas en tiendas generales, que incluye un catálogo digital interactivo, gestión eficiente de inventarios, seguimiento de transacciones y reportes en tiempo real, optimizando la operación comercial y mejorando la experiencia del cliente.",
+    "case_study_link": "https://eshop.desarrollocreativo.dev",
+    "cta": "Visita nuestra demo",
+    "image": "/content-images/proyecto-eshop.png",
+    "image_alt": "EShop - Tienda Online",
     "bg": "bg-gradient-to-r from-fuchsia-500 to-cyan-500"
   },
   {
-    "title": "Enhance productivity,<br>boost efficiency.",
-    "sector": "3D Design",
-    "content": "Create, collaborate, and render — all in one streamlined workflow. Teams are connected and producing stunning visuals in minutes.",
-    "case_study_link": "https://www.brighton.dog",
-    "cta": "Visit brighton.dog",
-    "image": "/content-images/brighton.dog.avif",
-    "image_alt": "iPad showing the web page of brighton.dog",
-    "bg": "bg-gradient-to-r from-pink-500 to-yellow-500"
+    "title": "FarmaStore",
+    "sector": "Ventas",
+    "content": "Sistema web avanzado para la gestión integral de farmacias y sus sucursales, diseñado para optimizar el control de inventarios de medicamentos, gestionar compras y ventas, generar reportes detallados en tiempo real y garantizar el cumplimiento normativo.",
+    "case_study_link": "https://farmastore.desarrollocreativo.dev/",
+    "cta": "Visits nuestra demo",
+    "image": "/content-images/proyecto-farmastore.png",
+    "image_alt": "Hacienda Web",
+    "bg": "bg-gradient-to-r from-blue-500 to-skyblue-500"
+  },
+  {
+    "title": "HotelAdmin",
+    "sector": "Administración",
+    "content": "Sistema web para la administración de hospedajes que optimiza la administración de tus habitaciones y seguimientos de tus huespedes.",
+    "case_study_link": "https://hotel.desarrollocreativo.dev",
+    "cta": "Visits nuestra demo",
+    "image": "/content-images/proyecto-hotel.png",
+    "image_alt": "Hacienda Web",
+    "bg": "bg-gradient-to-r from-indigo-400 to-violet-600"
+  },
+  {
+    "title": "Hacienda Web",
+    "sector": "Administración",
+    "content": "Sistema web para la administración y seguimiento de tu estancia, que optimiza la gestión de movimientos de animales, registro de lluvias, producción de leche y otras funciones clave, brindando herramientas integrales para maximizar la eficiencia y productividad de tu operación ganadera.",
+    "case_study_link": "https://mihacienda.desarrollocreativo.dev/",
+    "cta": "Visits nuestra demo",
+    "image": "/content-images/proyecto-haciendaweb.png",
+    "image_alt": "Hacienda Web",
+    "bg": "bg-gradient-to-r from-green-500 to-yellow-600"
   }
 ]

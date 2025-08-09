@@ -1,25 +1,25 @@
 {
-  "title": "blackspike astro landing page",
-  "description": "A free Astro landing theme made with Tailwind",
+  "title": "Desarrollo Creativo | Bienvenido/a",
+  "description": "Transformamos ideas en soluciones",
   "social_image": "/1200x630.jpg",
-  "base_url": "https://astro-theme.blackspike.com",
+  "base_url": "https://desarrollocreativo.dev",
   "demo": {
-    "title": "Need design?",
+    "title": "Más información?",
     "content": "<strong>Get a guided tour through our services</strong>, and find out how you and your team can change the way you work, forever.",
-    "cta": "Book a call"
+    "cta": "Contáctanos"
   },
   "theme_color": "#18181b",
   "nav": [
     {
-      "title": "Services",
+      "title": "Servicios",
       "link": "/#services"
     },
     {
-      "title": "Case studies",
+      "title": "Proyectos",
       "link": "/#case-studies"
     },
     {
-      "title": "Pricing",
+      "title": "Precios",
       "link": "/#pricing"
     },
     {
@@ -27,31 +27,31 @@
       "link": "/#faq"
     },
     {
-      "title": "Newsletter",
+      "title": "Contacto",
       "link": "/#newsletter"
     }
   ],
 
   "social_links": [
     {
-      "title": "Twitter / X",
-      "link": "https://x.com/blackspikeltd/"
+      "title": "Facebook",
+      "link": "https://www.facebook.com/desarrollocreativodev"
     },
     {
-      "title": "Mastodon",
-      "link": "https://mastodon.cloud/@blackspike"
+      "title": "Instagram",
+      "link": "https://www.instagram.com/desarrollocreativodev/"
     },
     {
       "title": "GitHub",
-      "link": "https://github.com/blackspike/"
+      "link": "https://github.com/desarrollo-creativo"
     },
     {
       "title": "LinkedIn",
-      "link": "https://www.linkedin.com/company/blackspike"
+      "link": "#"
     },
     {
-      "title": "Bluesky",
-      "link": "https://bsky.app/profile/blackspike.com/"
+      "title": "Youtube",
+      "link": "https://www.youtube.com/@DesarrolloCreativoDev"
     }
   ]
 }
