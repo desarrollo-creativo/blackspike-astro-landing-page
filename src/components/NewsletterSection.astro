@@ -26,18 +26,18 @@ const { newsletter } = Astro.props
       <!-- Form -->
       <form class="flex gap-4 flex-col" action="">
 
-        <label class="sr-only" for="nl-name">Name</label>
+        <label class="sr-only" for="nl-name">Tu nombre</label>
         <input
           id="nl-name"
-          class="border-2 rounded-lg text-center bg-bs-surface-0 border-bs-surface-3 form-input px-4 py-3"
-          placeholder="Your name">
+          class="border-2 rounded-lg bg-bs-surface-0 border-bs-surface-3 form-input px-4 py-3"
+          placeholder="Jhon Doe">
 
-        <label class="sr-only" for="nl-email">Email</label>
+        <label class="sr-only" for="nl-phone">Tu número de celular</label>
         <input
-          id="nl-email"
-          type="email"
-          class="border-2 rounded-lg text-center bg-bs-surface-0 border-bs-surface-3 form-input px-4 py-3"
-          placeholder="Your email">
+          id="nl-phone"
+          type="text"
+          class="border-2 rounded-lg bg-bs-surface-0 border-bs-surface-3 form-input px-4 py-3"
+          placeholder="69405752">
 
         <input type="submit" value={ newsletter.cta } class="bs-btn form-input px-4 py-3">
 

@@ -1,12 +1,12 @@
 {
   "title": "Desarrollo Creativo | Bienvenido/a",
   "description": "Transformamos ideas en soluciones",
-  "social_image": "/1200x630.jpg",
+  "social_image": "/logo-256x256.jpeg",
   "base_url": "https://desarrollocreativo.dev",
   "demo": {
     "title": "Más información?",
-    "content": "<strong>Get a guided tour through our services</strong>, and find out how you and your team can change the way you work, forever.",
-    "cta": "Contáctanos"
+    "content": "<strong>Si deseas obtener más información</strong>, envíanos un mensaje y te contestaremos lo antes posible para resolver tus dudas.",
+    "cta": "Enviar mensaje"
   },
   "theme_color": "#18181b",
   "nav": [

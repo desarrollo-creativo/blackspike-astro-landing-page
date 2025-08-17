@@ -35,34 +35,34 @@ const { content } = Astro.props
         <!-- Form inputs -->
 
         <!-- Name -->
-        <label class="sr-only" for="name">Name</label>
+        <label class="sr-only" for="name">Tu nombre</label>
 
         <input
           id="name"
           type="text"
           class="border-2 rounded-lg bg-bs-surface-0 border-bs-surface-3 form-input px-4 py-3"
-          placeholder="Your name"
+          placeholder="Jhon Doe"
         >
 
-        <!-- Company -->
-        <label class="sr-only" for="company">Company</label>
+        <!-- Phone number -->
+        <label class="sr-only" for="phone_number">Tu número de celular</label>
 
         <input
-          id="company"
+          id="phone_number"
           type="text"
           class="border-2 rounded-lg bg-bs-surface-0 border-bs-surface-3 form-input px-4 py-3"
-          placeholder="Your company"
+          placeholder="69405752"
         >
 
-        <!-- Email -->
-        <label class="sr-only" for="email">Email</label>
+        <!-- Text message -->
+        <label class="sr-only" for="text_message">Email</label>
 
-        <input
-          id="email"
-          type="email"
+        <textarea
+          id="text_message"
           class="border-2 rounded-lg bg-bs-surface-0 border-bs-surface-3 form-input px-4 py-3"
-          placeholder="Your email"
-        >
+          placeholder="Hola, quisiera obtener más información sobre..."
+          rows="3"
+        ></textarea>
 
         <!-- Submit -->
         <button class="bs-btn form-input px-4 py-3">{ content.cta }</button>

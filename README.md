@@ -15,3 +15,10 @@
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
+## Comandos para desplegar con docker
+
+| Comando                              | Acción                                           |
+| :------------------------------------| :----------------------------------------------- |
+| `docker build -t lp-dc .`            | Construir la imagen                              |
+| `docker run -p 4321:80 -t lp-dc`   | Iniciar contenedor                               |
+
