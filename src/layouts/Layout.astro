@@ -50,7 +50,7 @@ const gaMeasurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
 
     <!-- Google Analytics -->
     {
-      import.meta.env.PROD && gaMeasurementId && (
+      gaMeasurementId && (
         <>
           <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`}></script>
           <script define:vars={{ gaMeasurementId }}>
