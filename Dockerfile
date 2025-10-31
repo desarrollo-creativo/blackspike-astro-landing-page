@@ -8,6 +8,7 @@ WORKDIR /app
 
 # Copy package files and install dependencies with pnpm
 COPY package.json pnpm-lock.yaml ./
+COPY .env.example ./.env
 RUN pnpm install --frozen-lockfile
 
 # Copy the rest of the application source code

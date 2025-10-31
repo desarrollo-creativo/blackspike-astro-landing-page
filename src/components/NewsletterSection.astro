@@ -72,8 +72,22 @@ const { newsletter } = Astro.props
     submitButton.disabled = true;
 
     const formData = new FormData(form);
-    const name = formData.get('name');
-    const phone = formData.get('phone');
+    const name = (formData.get('name') as string)?.trim();
+    const phone = (formData.get('phone') as string)?.trim();
+
+    // Validations
+    if (name.length <= 2) {
+      showToast('Tu nombre debe tener más de 2 caracteres.', true);
+      submitButton.value = originalButtonText;
+      submitButton.disabled = false;
+      return;
+    }
+    if (!/^\d{8}$/.test(phone)) {
+      showToast('Tu número de celular debe tener 8 dígitos.', true);
+      submitButton.value = originalButtonText;
+      submitButton.disabled = false;
+      return;
+    }
 
     const text = `la persona *${name}* con el numero *${phone}* quiere recibir novedades sobre la empresa`;
 
@@ -94,7 +108,7 @@ const { newsletter } = Astro.props
         showToast('¡Gracias por suscribirte! Pronto recibirás novedades.');
 
         // Prepare and send the welcome message to the new subscriber
-        const welcomeMessage = `¡Hola, ${name}! 👋 ¡Bienvenido/a a la comunidad de Desarrollo Creativo! 🚀 A partir de ahora, recibirás nuestras últimas novedades y ofertas especiales. ¡Gracias por unirte! ✨`;
+        const welcomeMessage = `¡Hola, *${name}*! 👋 ¡Bienvenido/a a la comunidad de *Desarrollo Creativo*! 🚀 A partir de ahora, recibirás nuestras últimas novedades y ofertas especiales. ¡Gracias por unirte! ✨`;
         await fetch('https://whatsapp-api.desarrollocreativo.dev/send?id=desarrollo-creativo', {
           method: 'POST',
           headers: {

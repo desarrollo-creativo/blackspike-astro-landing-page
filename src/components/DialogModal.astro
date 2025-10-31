@@ -16,7 +16,7 @@ const { content } = Astro.props
 
       <span>{ content.title }</span>
 
-      <button onclick="this.closest('dialog').close('close')" aria-label="Close"
+      <button type="button" onclick="this.closest('dialog').close('close')" aria-label="Close"
         class="bs-btn rounded-full !p-0 flex items-center justify-center h-10 w-10">
 
         <X class="scale-75 opacity-75" width="32" height="32" />
@@ -97,10 +97,29 @@ const { content } = Astro.props
     submitButton.disabled = true;
 
     const formData = new FormData(form);
-    const name = formData.get('name');
-    const phone = formData.get('phone');
-    const message = formData.get('message');
+    const name = (formData.get('name') as string)?.trim();
+    const phone = (formData.get('phone') as string)?.trim();
+    const message = (formData.get('message') as string)?.trim();
 
+    // Validations
+    if (name.length <= 2) {
+      showToast('Tu nombre debe tener más de 2 caracteres.', true);
+      submitButton.textContent = originalButtonText;
+      submitButton.disabled = false;
+      return;
+    }
+    if (!/^\d{8}$/.test(phone)) {
+      showToast('Tu número de celular debe tener 8 dígitos.', true);
+      submitButton.textContent = originalButtonText;
+      submitButton.disabled = false;
+      return;
+    }
+    if (message.length <= 2) {
+      showToast('Tu mensaje debe tener más de 2 caracteres.', true);
+      submitButton.textContent = originalButtonText;
+      submitButton.disabled = false;
+      return;
+    }
     const text = `Consulta de ${name} (${phone}):\n\n${message}`;
 
     try {

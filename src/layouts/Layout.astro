@@ -19,6 +19,8 @@ import HeaderMain from "../components/HeaderMain.astro"
 
 const { title, description } = Astro.props
 
+const gaMeasurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
+
 ---
 
 <html lang="es">
@@ -46,6 +48,22 @@ const { title, description } = Astro.props
     <Font cssVariable="--font-inter" preload />
     <Font cssVariable="--font-inter-display" preload />
 
+    <!-- Google Analytics -->
+    {
+      import.meta.env.PROD && gaMeasurementId && (
+        <>
+          <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`}></script>
+          <script define:vars={{ gaMeasurementId }}>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+              dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", gaMeasurementId);
+          </script>
+        </>
+      )
+    }
   </head>
 
   <body id="top">
@@ -72,4 +90,3 @@ const { title, description } = Astro.props
 
   </body>
 </html>
-
