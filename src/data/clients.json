@@ -1,8 +1,13 @@
 [
   {
-    "title": "Restaurante Trinimex",
-    "image": "/content-images/cliente-trinimex.png",
-    "link": "https://www.facebook.com/trinimex"
+    "title": "Kaliman Asador",
+    "image": "/content-images/cliente-kaliman.png",
+    "link": "https://www.facebook.com/kalimanasadorbo"
+  },
+  {
+    "title": "Masaco Express",
+    "image": "/content-images/cliente-masaco-express.avif",
+    "link": "https://www.facebook.com/profile.php?id=100063535961259"
   },
   {
     "title": "Ditribuidora Monteverde",
@@ -15,6 +20,21 @@
     "link": "https://www.facebook.com/ElJineteMotoRepuestos"
   },
   {
+    "title": "Taqiria Restaurante",
+    "image": "/content-images/cliente-taqiria.jpg",
+    "link": "https://www.facebook.com/profile.php?id=100088365132161"
+  },
+  {
+    "title": "Restaurant Gran Paraná Central",
+    "image": "/content-images/cliente-gran-parana.avif",
+    "link": "https://www.facebook.com/profile.php?id=100091508078256"
+  },
+  {
+    "title": "El Loco Gibas & Grill",
+    "image": "/content-images/cliente-loco-grill.avif",
+    "link": "https://www.facebook.com/ElLocoGrill"
+  },
+  {
     "title": "Delicia Importaciones",
     "image": "/content-images/cliente-delicia.png",
     "link": "https://www.facebook.com/profile.php?id=100060582674469"
@@ -25,9 +45,9 @@
     "link": "https://cadbeni.com/"
   },
   {
-    "title": "Kaliman Asador",
-    "image": "/content-images/cliente-kaliman.png",
-    "link": "https://www.facebook.com/kalimanasadorbo"
+    "title": "Coteautri",
+    "image": "/content-images/cliente-coteautri.png",
+    "link": "https://www.coteautri.bo/"
   },
   {
     "title": "Hotel Tarope",
@@ -35,18 +55,23 @@
     "link": "https://www.hoteltarope.com.bo/"
   },
   {
-    "title": "La Palabra del Beni",
-    "image": "/content-images/cliente-la-palabra-del-beni.jpg",
-    "link": "https://lapalabradelbeni.com/"
-  },
-  {
-    "title": "Coteautri",
-    "image": "/content-images/cliente-coteautri.png",
-    "link": "https://www.coteautri.bo/"
+    "title": "Farmacia FarmaRocha",
+    "image": "/content-images/cliente-farmarocha.avif",
+    "link": "https://www.facebook.com/profile.php?id=100095063852721"
   },
   {
     "title": "Strong Gym",
     "image": "/content-images/cliente-strong-gym.png",
     "link": "https://www.facebook.com/profile.php?id=61575791840406"
+  },
+  {
+    "title": "Guzman Gym",
+    "image": "/content-images/cliente-guzman-gym.avif",
+    "link": "https://www.facebook.com/profile.php?id=61579428766160"
+  },
+  {
+    "title": "Quieres trabajar con nosotros",
+    "image": "/content-images/tu-logo-aqui.png",
+    "link": "https://wa.me/59169405752?text=Hola, estoy interesado/a en sus servicios."
   }
 ]

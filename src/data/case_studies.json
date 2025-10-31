@@ -1,10 +1,10 @@
 [
   {
-    "title": "Gerente de Restaurantes",
+    "title": "Gerentes Web",
     "sector": "Administración",
     "content": "<strong>Aplicación web pensada para facilitar la administración de tu restaurante.</strong> <br><br>Puedes administrar tus ventas, inventario, compras, caja, generación de reportes y más funciones claves que te ayudarán a optimizar tu negocio eficientemente.",
-    "case_study_link": "https://restaurante.desarrollocreativo.dev/login?auth=demo",
-    "cta": "Visita Gerente de Restaurantes",
+    "case_study_link": "https://restaurantesweb.com/login?auth=demo",
+    "cta": "Visita Restaurantes Web",
     "image": "/content-images/proyecto-restaurante.avif",
     "image_alt": "iPad showing spike.news website",
     "bg": "bg-gradient-to-r from-green-400 to-green-700"
