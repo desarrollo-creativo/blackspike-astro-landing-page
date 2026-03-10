@@ -9,7 +9,12 @@ const { settings } = Astro.props
 <footer class="@container bs-container my-24 font-semibold text-bs-foreground-dark [&_a]:hover:text-bs-foreground-light [&_a]:transition-color [&_a]:duration-150" id="contact">
 
   <!-- Wrapper -->
-  <div class="bg-bs-surface-2 p-6 md:p-16 rounded-xl grid md:grid-cols-2 gap-8">
+  <div class="p-6 md:p-16 rounded-xl grid md:grid-cols-2 gap-8 border border-dc-blue/15 relative overflow-hidden"
+    style="background: linear-gradient(135deg, rgba(14,165,233,0.05) 0%, rgba(124,58,237,0.08) 100%)">
+
+    <!-- Footer glow -->
+    <div class="pointer-events-none absolute -bottom-16 -right-16 w-64 h-64 rounded-full opacity-20 blur-[80px]"
+      style="background: radial-gradient(circle, #7C3AED, transparent 70%)"></div>
 
       <!-- Left col -->
       <div class="w-max flex flex-col gap-8 md:gap-0 justify-between text-bs-foreground-light">
@@ -25,7 +30,7 @@ const { settings } = Astro.props
         <h2 class="bs-h3">{ settings.demo.title  }</h2>
 
         <!-- CTA Button -->
-        <button type="button" class="min-w-32 bs-btn block bg-bs-surface-3" onclick="demo.showModal()">
+        <button type="button" class="min-w-32 bs-btn block" onclick="demo.showModal()">
           { settings.demo.cta }
         </button>
 

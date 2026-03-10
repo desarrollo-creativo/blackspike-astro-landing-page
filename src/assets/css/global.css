@@ -5,13 +5,22 @@
   --font-display: var(--font-inter-display), "ui-sans-serif", "system-ui", "sans-serif";
   --font-body: var(--font-inter), "ui-sans-serif", "system-ui", "sans-serif";
 
-  --color-bs-surface-0: #121212;
-  --color-bs-surface-1: #18181B;
-  --color-bs-surface-2: rgba(255, 255, 255, 0.03);
-  --color-bs-surface-3: #2F2F31;
+  /* === Desarrollo Creativo Brand Palette === */
 
-  --color-bs-foreground-light: #eee;
-  --color-bs-foreground-dark: #9f9f9f;
+  /* Dark backgrounds */
+  --color-bs-surface-0: #020617;   /* slate-950  — deepest background */
+  --color-bs-surface-1: #0F172A;   /* slate-900  — page background */
+  --color-bs-surface-2: rgba(14, 165, 233, 0.06);  /* subtle blue tint overlay */
+  --color-bs-surface-3: #1E293B;   /* slate-800  — card borders / UI lines */
+
+  /* Text */
+  --color-bs-foreground-light: #E5E7EB;   /* Light Gray */
+  --color-bs-foreground-dark:  #94A3B8;   /* slate-400 — muted text */
+
+  /* Brand accent colors */
+  --color-dc-blue:   #0EA5E9;   /* Tech Blue */
+  --color-dc-purple: #7C3AED;   /* Innovation Purple */
+  --color-dc-orange: #F97316;   /* Creative Orange */
 
   --color-current: currentColor;
 
@@ -22,4 +31,45 @@
     1.077, 1.121, 1.149 24.3%, 1.159, 1.163, 1.161, 1.154 29.9%, 1.129 32.8%,
     1.051 39.6%, 1.017 43.1%, 0.991, 0.977 51%, 0.974 53.8%, 0.975 57.1%,
     0.997 69.8%, 1.003 76.9%, 1.004 83.8%, 1);
+}
+
+/* === Brand Utility Classes === */
+
+/* Gradient text: blue → purple */
+.dc-gradient-text {
+  background: linear-gradient(135deg, var(--color-dc-blue), var(--color-dc-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Gradient text: purple → orange */
+.dc-gradient-text-warm {
+  background: linear-gradient(135deg, var(--color-dc-purple), var(--color-dc-orange));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Orange highlight for key words */
+.dc-highlight {
+  color: var(--color-dc-orange);
+}
+
+/* Glow on brand blue */
+.dc-glow-blue {
+  box-shadow: 0 0 24px rgba(14, 165, 233, 0.35), 0 0 48px rgba(14, 165, 233, 0.15);
+}
+
+/* Gradient background: blue → purple */
+.dc-gradient-bg {
+  background: linear-gradient(135deg, var(--color-dc-blue), var(--color-dc-purple));
+}
+
+/* Subtle tech grid overlay */
+.dc-tech-grid {
+  background-image:
+    linear-gradient(rgba(14, 165, 233, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(14, 165, 233, 0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
 }

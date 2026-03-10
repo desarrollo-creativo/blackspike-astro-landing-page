@@ -21,7 +21,8 @@ const { title, pricing } = Astro.props
     { pricing.map( ( item, index ) =>
 
     <article
-      class:list={['@container p-6 xl:p-16 flex flex-col gap-6 h-full w-full rounded-xl overflow-hidden lg:scale-90 @xl:justify-end', index === 1 ? 'bg-white/90 text-black/90 lg:scale-none' : 'bg-bs-surface-0/90']}>
+      class:list={['@container p-6 xl:p-16 flex flex-col gap-6 h-full w-full rounded-xl overflow-hidden lg:scale-90 @xl:justify-end relative', index === 1 ? 'lg:scale-none border border-dc-blue/40 text-bs-foreground-light' : 'bg-bs-surface-0/90 border border-bs-surface-3']}
+    style={ index === 1 ? 'background: linear-gradient(135deg, rgba(14,165,233,0.12) 0%, rgba(124,58,237,0.18) 100%); box-shadow: 0 0 40px rgba(14,165,233,0.15), 0 0 80px rgba(124,58,237,0.1);' : '' }>
 
       <!-- Content -->
       <div class="relative">

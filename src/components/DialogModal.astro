@@ -4,6 +4,10 @@ import X from '../assets/theme-images/icon-x.svg'
 
 const { content } = Astro.props
 
+const evolutionDomain = import.meta.env.PUBLIC_EVOLUTION_DOMAIN;
+const evolutionInstance = import.meta.env.PUBLIC_EVOLUTION_INSTANCE;
+const evolutionToken = import.meta.env.PUBLIC_EVOLUTION_TOKEN;
+
 ---
 
 <dialog id="demo" closedby="any" class="fixed inset-0 bg-bs-surface-0 m-auto z-50 p-6 md:p-12 rounded-xl w-full max-w-[95%] md:max-w-lg">
@@ -81,13 +85,13 @@ const { content } = Astro.props
 
 </dialog>
 
-<script>
-  const dialog = document.getElementById('demo') as HTMLDialogElement;
-  const form = document.getElementById('dialog-form') as HTMLFormElement;
-  const submitButton = document.getElementById('dialog-submit') as HTMLButtonElement;
-  const toast = document.getElementById('dialog-toast-notification') as HTMLDivElement;
-  const toastMessage = document.getElementById('dialog-toast-message') as HTMLSpanElement;
-  let toastTimeout: number;
+<script define:vars={{ evolutionDomain, evolutionInstance, evolutionToken }} is:inline>
+  const dialog = document.getElementById('demo');
+  const form = document.getElementById('dialog-form');
+  const submitButton = document.getElementById('dialog-submit');
+  const toast = document.getElementById('dialog-toast-notification');
+  const toastMessage = document.getElementById('dialog-toast-message');
+  let toastTimeout;
 
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
@@ -97,9 +101,9 @@ const { content } = Astro.props
     submitButton.disabled = true;
 
     const formData = new FormData(form);
-    const name = (formData.get('name') as string)?.trim();
-    const phone = (formData.get('phone') as string)?.trim();
-    const message = (formData.get('message') as string)?.trim();
+    const name = formData.get('name')?.trim();
+    const phone = formData.get('phone')?.trim();
+    const message = formData.get('message')?.trim();
 
     // Validations
     if (name.length <= 2) {
@@ -123,13 +127,14 @@ const { content } = Astro.props
     const text = `Consulta de ${name} (${phone}):\n\n${message}`;
 
     try {
-      const response = await fetch('https://whatsapp-api.desarrollocreativo.dev/send?id=desarrollo-creativo', {
+      const response = await fetch(`${evolutionDomain}/message/sendText/${evolutionInstance}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'apikey': evolutionToken,
         },
         body: JSON.stringify({
-          phone: '59175199157', // Your business number
+          number: '59175199157',
           text: text,
         }),
       });
@@ -137,7 +142,7 @@ const { content } = Astro.props
       if (response.ok) {
         showToast('¡Mensaje enviado! Gracias por contactarnos.');
         form.reset();
-        setTimeout(() => dialog.close(), 500); // Close dialog after a short delay
+        setTimeout(() => dialog.close(), 500);
       } else {
         showToast('Hubo un error al enviar tu mensaje. Por favor, inténtalo de nuevo.', true);
       }
@@ -150,7 +155,7 @@ const { content } = Astro.props
   });
 
   // --- Toast Notification Logic ---
-  function showToast(message: string, isError = false) {
+  function showToast(message, isError = false) {
     clearTimeout(toastTimeout);
 
     toastMessage.textContent = message;
